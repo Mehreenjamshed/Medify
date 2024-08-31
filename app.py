@@ -1,6 +1,3 @@
-# Install required libraries
-!pip install transformers bitsandbytes accelerate deep_translator
-
 # Import necessary libraries
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
@@ -72,21 +69,4 @@ def translate_text(text):
 
 # Streamlit UI
 st.title("AI Healthcare Assistant and Transcription Service")
-st.write("Click the button below to start transcription and translation.")
-
-# Button to start transcription
-if st.button("Start Transcription"):
-    with st.spinner("Transcribing and translating..."):
-        transcribed_text = transcribe_live_audio()
-        translated_text = translate_text(transcribed_text)
-        
-        # Display results
-        st.write("Transcribed Text (Urdu):", transcribed_text)
-        st.write("Translated Text (English):", translated_text)
-
-# Continuous interaction loop for AI Medical Assistant
-if st.button("Ask a Medical Question"):
-    question = st.text_input("Please enter your medical question:")
-    if question:
-        answer = askme(question)
-        st.write("AI Medical Assistant: ", answer)
+st.write("Click the button below to start transcript
