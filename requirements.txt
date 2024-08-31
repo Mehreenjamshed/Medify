@@ -4,3 +4,5 @@ bitsandbytes
 accelerate
 deep_translator
 SpeechRecognition
+torch
+
