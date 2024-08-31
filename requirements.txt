@@ -1,0 +1,6 @@
+streamlit==1.38.0
+transformers
+bitsandbytes
+accelerate
+deep_translator
+SpeechRecognition
